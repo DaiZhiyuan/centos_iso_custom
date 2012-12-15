@@ -20,6 +20,8 @@ add an new user for development
 ##Step2. 
 Get the source package from the redhat
 
+http://vault.centos.org
+
 http://ftp.redhat.com/pub/redhat/linux/enterprise/6Server/en/os/
 
 ##Step3.
