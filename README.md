@@ -34,4 +34,20 @@ edit the spec
 ##Step4. 
 rebuild the repo file
 
-[userid@hostname ~]$ createrepo 
+[userid@hostname ~]$ mount -o loop CentOS.iso /mnt
+
+[userid@hostname ~]$ mkdir ~/centos_iso
+
+[userid@hostname ~]$ rsync -avP /mnt/* ~/centos_iso
+
+copy the rpm to new Packages.
+
+[userid@hostname ~]$ cd ~/centos_iso/Packages
+
+[userid@hostname ~]$ createrepo ..
+
+edit the repomd.xml , copy the group_z group part from the existing repodata.
+
+
+##Step5. 
+UltraISO edit the iso file and then replace with the new files.
